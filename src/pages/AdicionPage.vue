@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Inscripci&oacute;n de Materias</h1>
+    <h1>Adici&oacute;n de Materias</h1>
   </div>
   <div class="q-pa-lg">
     <div class="row">
@@ -125,7 +125,7 @@ export default {
         grupos: [
           {// Grupo SC
             nombre: 'SC',
-            docente: 'Ing. Jorge Calizaya',
+            docente: 'Ing. Mario Lopez',
             materia: 'Calculo 1',
             cupos: 24,
             codigo: 'MAT101-SC',
@@ -149,39 +149,20 @@ export default {
           },
           {// Grupo Z1
             nombre: 'Z1',
-            docente: 'Ing. Katime Bruno',
+            docente: 'Ing. Katime Esther',
             materia: 'Calculo 1',
             cupos: 4,
             codigo: 'MAT101-Z1',
             horarios: [
               {// Martes
                 dia: 'Mar',
-                hora_inicio: '09:15',
+                hora_inicio: '10:00',
                 hora_fin: '11:30',
               },
               {// Jueves
                 dia: 'Jue',
-                hora_inicio: '09:15',
+                hora_inicio: '10:00',
                 hora_fin: '11:30',
-              },
-            ]
-          },
-          {// Grupo Z2
-            nombre: 'Z2',
-            docente: 'Ing. Pedro Escamoso',
-            materia: 'Calculo 1',
-            cupos: 4,
-            codigo: 'MAT101-Z2',
-            horarios: [
-              {// Martes
-                dia: 'Mar',
-                hora_inicio: '11:30',
-                hora_fin: '13:45',
-              },
-              {// Jueves
-                dia: 'Jue',
-                hora_inicio: '11:30',
-                hora_fin: '13:45',
               },
             ]
           }
@@ -242,291 +223,7 @@ export default {
             ]
           }
         ]
-      },
-     
-    ]
-
-    const rows = [
-      [
-        {
-          value: '07:00 - 07:45',
-          codigo_inicio: 700,
-          codigo_fin: 745,
-          horario: true,
-        },
-        {
-          codigo: 'lunes',
-          value: '-',
-        },
-        {
-          codigo: 'martes',
-          value: '-',
-        },
-        {
-          codigo: 'miercoles',
-          value: '-'
-        },
-        {
-          codigo: 'jueves',
-          value: '-',
-        },
-        {
-          codigo: 'viernes',
-          value: '-'
-        },
-      ],
-      [
-        {
-          value: '07:45 - 08:30',
-          codigo_inicio: 745,
-          codigo_fin: 830,
-          horario: true,
-        },
-        {
-          codigo: 'lunes',
-          value: '-',
-        },
-        {
-          codigo: 'martes',
-          value: '-',
-        },
-        {
-          codigo: 'miercoles',
-          value: '-'
-        },
-        {
-          codigo: 'jueves',
-          value: '-',
-        },
-        {
-          codigo: 'viernes',
-          value: '-'
-        },
-      ],
-      [
-        {
-          value: '08:30 - 09:15',
-          codigo_inicio: 830,
-          codigo_fin: 915,
-          horario: true,
-        },
-        {
-          codigo: 'lunes',
-          value: '-',
-        },
-        {
-          codigo: 'martes',
-          value: '-',
-        },
-        {
-          codigo: 'miercoles',
-          value: '-',
-        },
-        {
-          codigo: 'jueves',
-          value: '-',
-        },
-        {
-          codigo: 'viernes',
-          value: '-',
-        },
-      ],
-      [
-        {
-          value: '09:15 - 10:00',
-          codigo_inicio: 915,
-          codigo_fin: 1000,
-          horario: true,
-        },
-        {
-          codigo: 'lunes',
-          value: '-',
-        },
-        {
-          codigo: 'martes',
-          value: '-',
-        },
-        {
-          codigo: 'miercoles',
-          value: '-',
-        },
-        {
-          codigo: 'jueves',
-          value: '-'
-        },
-        {
-          codigo: 'viernes',
-          value: '-',
-        },
-      ],
-      [
-        {
-          value: '10:00 - 10:45',
-          codigo_inicio: 1000,
-          codigo_fin: 1045,
-          horario: true,
-        },
-        {
-          codigo: 'lunes',
-          value: '-'
-        },
-        {
-          codigo: 'martes',
-          value: '-'
-        },
-        {
-          codigo: 'miercoles',
-          value: '-'
-        },
-        {
-          codigo: 'jueves',
-          value: '-'
-        },
-        {
-          codigo: 'viernes',
-          value: '-'
-        },
-      ],
-      [
-        {
-          value: '10:45 - 11:30',
-          codigo_inicio: 1045,
-          codigo_fin: 1130,
-          horario: true,
-        },
-        {
-          codigo: 'lunes',
-          value: '-'
-        },
-        {
-          codigo: 'martes',
-          value: '-'
-        },
-        {
-          codigo: 'miercoles',
-          value: '-'
-        },
-        {
-          codigo: 'jueves',
-          value: '-'
-        },
-        {
-          codigo: 'viernes',
-          value: '-'
-        },
-      ],
-      [
-        {
-          value: '11:30 - 12:15',
-          codigo_inicio: 1130,
-          codigo_fin: 1215,
-          horario: true,
-        },
-        {
-          codigo: 'lunes',
-          value: '-'
-        },
-        {
-          codigo: 'martes',
-          value: '-'
-        },
-        {
-          codigo: 'miercoles',
-          value: '-'
-        },
-        {
-          codigo: 'jueves',
-          value: '-'
-        },
-        {
-          codigo: 'viernes',
-          value: '-'
-        },
-      ],
-      [
-        {
-          value: '12:15 - 13:00',
-          codigo_inicio: 1215,
-          codigo_fin: 1300,
-          horario: true,
-        },
-        {
-          codigo: 'lunes',
-          value: '-'
-        },
-        {
-          codigo: 'martes',
-          value: '-'
-        },
-        {
-          codigo: 'miercoles',
-          value: '-'
-        },
-        {
-          codigo: 'jueves',
-          value: '-'
-        },
-        {
-          codigo: 'viernes',
-          value: '-'
-        },
-      ],
-      [
-        {
-          value: '13:00 - 13:45',
-          codigo_inicio: 1300,
-          codigo_fin: 1345,
-          horario: true,
-        },
-        {
-          codigo: 'lunes',
-          value: '-'
-        },
-        {
-          codigo: 'martes',
-          value: '-'
-        },
-        {
-          codigo: 'miercoles',
-          value: '-'
-        },
-        {
-          codigo: 'jueves',
-          value: '-'
-        },
-        {
-          codigo: 'viernes',
-          value: '-'
-        },
-      ],
-      [
-        {
-          value: '13:45 - 14:30',
-          codigo_inicio: 1345,
-          codigo_fin: 1430,
-          horario: true,
-        },
-        {
-          codigo: 'lunes',
-          value: '-'
-        },
-        {
-          codigo: 'martes',
-          value: '-'
-        },
-        {
-          codigo: 'miercoles',
-          value: '-'
-        },
-        {
-          codigo: 'jueves',
-          value: '-'
-        },
-        {
-          codigo: 'viernes',
-          value: '-'
-        },
-      ],
+      }
     ]
 
     // const rows = [
@@ -543,11 +240,7 @@ export default {
     //     },
     //     {
     //       codigo: 'martes',
-    //       materia: 'Fisica 1',
-    //       docente: 'Ing. Juan Perez',
-    //       grupo: 'Z1',
-    //       style: 'background-color: #CBECFF; border-radius: 20px; font-size: 12px;',
-    //       rowspan: 3,
+    //       value: '-',
     //     },
     //     {
     //       codigo: 'miercoles',
@@ -555,11 +248,7 @@ export default {
     //     },
     //     {
     //       codigo: 'jueves',
-    //       materia: 'Fisica 1',
-    //       docente: 'Ing. Juan Perez',
-    //       grupo: 'Z1',
-    //       style: 'background-color: #CBECFF; border-radius: 20px; font-size: 12px;',
-    //       rowspan: 3,
+    //       value: '-',
     //     },
     //     {
     //       codigo: 'viernes',
@@ -579,23 +268,19 @@ export default {
     //     },
     //     {
     //       codigo: 'martes',
-    //       materia: 'Fisica 1',
-    //       docente: 'Ing. Juan Perez',
-    //       grupo: 'Z1',
-    //       style: 'display: none;',
+    //       value: '-',
     //     },
     //     {
-    //       codigo: 'miercoles', value: '-'
+    //       codigo: 'miercoles',
+    //       value: '-'
     //     },
     //     {
     //       codigo: 'jueves',
-    //       materia: 'Fisica 1',
-    //       docente: 'Ing. Juan Perez',
-    //       grupo: 'Z1',
-    //       style: 'display: none;',
+    //       value: '-',
     //     },
     //     {
-    //       codigo: 'viernes', value: '-'
+    //       codigo: 'viernes',
+    //       value: '-'
     //     },
     //   ],
     //   [
@@ -607,41 +292,23 @@ export default {
     //     },
     //     {
     //       codigo: 'lunes',
-    //       materia: 'Calculo 1',
-    //       docente: 'Ing. Sanchez Mario',
-    //       grupo: 'SC',
-    //       style: 'background-color: #FFCBCB; border-radius: 20px; font-size: 12px;',
-    //       rowspan: 2,
+    //       value: '-',
     //     },
     //     {
     //       codigo: 'martes',
-    //       materia: 'Fisica 1',
-    //       docente: 'Ing. Juan Perez',
-    //       grupo: 'Z1',
-    //       style: 'display: none;',
+    //       value: '-',
     //     },
     //     {
     //       codigo: 'miercoles',
-    //       materia: 'Calculo 1',
-    //       docente: 'Ing. Sanchez Mario',
-    //       grupo: 'SC',
-    //       style: 'background-color: #FFCBCB; border-radius: 20px; font-size: 12px;',
-    //       rowspan: 2,
+    //       value: '-',
     //     },
     //     {
     //       codigo: 'jueves',
-    //       materia: 'Fisica 1',
-    //       docente: 'Ing. Juan Perez',
-    //       grupo: 'Z1',
-    //       style: 'display: none;',
+    //       value: '-',
     //     },
     //     {
     //       codigo: 'viernes',
-    //       materia: 'Calculo 1',
-    //       docente: 'Ing. Sanchez Mario',
-    //       grupo: 'SC',
-    //       style: 'background-color: #FFCBCB; border-radius: 20px; font-size: 12px;',
-    //       rowspan: 2,
+    //       value: '-',
     //     },
     //   ],
     //   [
@@ -653,10 +320,7 @@ export default {
     //     },
     //     {
     //       codigo: 'lunes',
-    //       materia: 'Calculo 1',
-    //       docente: 'Ing. Sanchez Mario',
-    //       grupo: 'SC',
-    //       style: 'display: none;',
+    //       value: '-',
     //     },
     //     {
     //       codigo: 'martes',
@@ -664,20 +328,15 @@ export default {
     //     },
     //     {
     //       codigo: 'miercoles',
-    //       materia: 'Calculo 1',
-    //       docente: 'Ing. Sanchez Mario',
-    //       grupo: 'SC',
-    //       style: 'display: none;',
+    //       value: '-',
     //     },
     //     {
-    //       codigo: 'jueves', value: '-'
+    //       codigo: 'jueves',
+    //       value: '-'
     //     },
     //     {
     //       codigo: 'viernes',
-    //       materia: 'Calculo 1',
-    //       docente: 'Ing. Sanchez Mario',
-    //       grupo: 'SC',
-    //       style: 'display: none;',
+    //       value: '-',
     //     },
     //   ],
     //   [
@@ -688,19 +347,24 @@ export default {
     //       horario: true,
     //     },
     //     {
-    //       codigo: 'lunes', value: '-'
+    //       codigo: 'lunes',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'martes', value: '-'
+    //       codigo: 'martes',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'miercoles', value: '-'
+    //       codigo: 'miercoles',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'jueves', value: '-'
+    //       codigo: 'jueves',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'viernes', value: '-'
+    //       codigo: 'viernes',
+    //       value: '-'
     //     },
     //   ],
     //   [
@@ -711,19 +375,24 @@ export default {
     //       horario: true,
     //     },
     //     {
-    //       codigo: 'lunes', value: '-'
+    //       codigo: 'lunes',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'martes', value: '-'
+    //       codigo: 'martes',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'miercoles', value: '-'
+    //       codigo: 'miercoles',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'jueves', value: '-'
+    //       codigo: 'jueves',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'viernes', value: '-'
+    //       codigo: 'viernes',
+    //       value: '-'
     //     },
     //   ],
     //   [
@@ -734,19 +403,24 @@ export default {
     //       horario: true,
     //     },
     //     {
-    //       codigo: 'lunes', value: '-'
+    //       codigo: 'lunes',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'martes', value: '-'
+    //       codigo: 'martes',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'miercoles', value: '-'
+    //       codigo: 'miercoles',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'jueves', value: '-'
+    //       codigo: 'jueves',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'viernes', value: '-'
+    //       codigo: 'viernes',
+    //       value: '-'
     //     },
     //   ],
     //   [
@@ -757,19 +431,24 @@ export default {
     //       horario: true,
     //     },
     //     {
-    //       codigo: 'lunes', value: '-'
+    //       codigo: 'lunes',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'martes', value: '-'
+    //       codigo: 'martes',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'miercoles', value: '-'
+    //       codigo: 'miercoles',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'jueves', value: '-'
+    //       codigo: 'jueves',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'viernes', value: '-'
+    //       codigo: 'viernes',
+    //       value: '-'
     //     },
     //   ],
     //   [
@@ -780,19 +459,24 @@ export default {
     //       horario: true,
     //     },
     //     {
-    //       codigo: 'lunes', value: '-'
+    //       codigo: 'lunes',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'martes', value: '-'
+    //       codigo: 'martes',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'miercoles', value: '-'
+    //       codigo: 'miercoles',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'jueves', value: '-'
+    //       codigo: 'jueves',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'viernes', value: '-'
+    //       codigo: 'viernes',
+    //       value: '-'
     //     },
     //   ],
     //   [
@@ -803,22 +487,318 @@ export default {
     //       horario: true,
     //     },
     //     {
-    //       codigo: 'lunes', value: '-'
+    //       codigo: 'lunes',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'martes', value: '-'
+    //       codigo: 'martes',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'miercoles', value: '-'
+    //       codigo: 'miercoles',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'jueves', value: '-'
+    //       codigo: 'jueves',
+    //       value: '-'
     //     },
     //     {
-    //       codigo: 'viernes', value: '-'
+    //       codigo: 'viernes',
+    //       value: '-'
     //     },
     //   ],
     // ]
+
+    const rows = [
+      [
+        {
+          value: '07:00 - 07:45',
+          codigo_inicio: 700,
+          codigo_fin: 745,
+          horario: true,
+        },
+        {
+          codigo: 'lunes',
+          value: '-',
+        },
+        {
+          codigo: 'martes',
+          materia: 'Fisica 1',
+          docente: 'Ing. Juan Perez',
+          grupo: 'Z1',
+          style: 'background-color: #CBECFF; border-radius: 20px; font-size: 12px;',
+          rowspan: 3,
+        },
+        {
+          codigo: 'miercoles',
+          value: '-'
+        },
+        {
+          codigo: 'jueves',
+          materia: 'Fisica 1',
+          docente: 'Ing. Juan Perez',
+          grupo: 'Z1',
+          style: 'background-color: #CBECFF; border-radius: 20px; font-size: 12px;',
+          rowspan: 3,
+        },
+        {
+          codigo: 'viernes',
+          value: '-'
+        },
+      ],
+      [
+        {
+          value: '07:45 - 08:30',
+          codigo_inicio: 745,
+          codigo_fin: 830,
+          horario: true,
+        },
+        {
+          codigo: 'lunes',
+          value: '-',
+        },
+        {
+          codigo: 'martes',
+          materia: 'Fisica 1',
+          docente: 'Ing. Juan Perez',
+          grupo: 'Z1',
+          style: 'display: none;',
+        },
+        {
+          codigo: 'miercoles', value: '-'
+        },
+        {
+          codigo: 'jueves',
+          materia: 'Fisica 1',
+          docente: 'Ing. Juan Perez',
+          grupo: 'Z1',
+          style: 'display: none;',
+        },
+        {
+          codigo: 'viernes', value: '-'
+        },
+      ],
+      [
+        {
+          value: '08:30 - 09:15',
+          codigo_inicio: 830,
+          codigo_fin: 915,
+          horario: true,
+        },
+        {
+          codigo: 'lunes',
+          materia: 'Calculo 1',
+          docente: 'Ing. Sanchez Mario',
+          grupo: 'SC',
+          style: 'background-color: #FFCBCB; border-radius: 20px; font-size: 12px;',
+          rowspan: 2,
+        },
+        {
+          codigo: 'martes',
+          materia: 'Fisica 1',
+          docente: 'Ing. Juan Perez',
+          grupo: 'Z1',
+          style: 'display: none;',
+        },
+        {
+          codigo: 'miercoles',
+          materia: 'Calculo 1',
+          docente: 'Ing. Sanchez Mario',
+          grupo: 'SC',
+          style: 'background-color: #FFCBCB; border-radius: 20px; font-size: 12px;',
+          rowspan: 2,
+        },
+        {
+          codigo: 'jueves',
+          materia: 'Fisica 1',
+          docente: 'Ing. Juan Perez',
+          grupo: 'Z1',
+          style: 'display: none;',
+        },
+        {
+          codigo: 'viernes',
+          materia: 'Calculo 1',
+          docente: 'Ing. Sanchez Mario',
+          grupo: 'SC',
+          style: 'background-color: #FFCBCB; border-radius: 20px; font-size: 12px;',
+          rowspan: 2,
+        },
+      ],
+      [
+        {
+          value: '09:15 - 10:00',
+          codigo_inicio: 915,
+          codigo_fin: 1000,
+          horario: true,
+        },
+        {
+          codigo: 'lunes',
+          materia: 'Calculo 1',
+          docente: 'Ing. Sanchez Mario',
+          grupo: 'SC',
+          style: 'display: none;',
+        },
+        {
+          codigo: 'martes',
+          value: '-',
+        },
+        {
+          codigo: 'miercoles',
+          materia: 'Calculo 1',
+          docente: 'Ing. Sanchez Mario',
+          grupo: 'SC',
+          style: 'display: none;',
+        },
+        {
+          codigo: 'jueves', value: '-'
+        },
+        {
+          codigo: 'viernes',
+          materia: 'Calculo 1',
+          docente: 'Ing. Sanchez Mario',
+          grupo: 'SC',
+          style: 'display: none;',
+        },
+      ],
+      [
+        {
+          value: '10:00 - 10:45',
+          codigo_inicio: 1000,
+          codigo_fin: 1045,
+          horario: true,
+        },
+        {
+          codigo: 'lunes', value: '-'
+        },
+        {
+          codigo: 'martes', value: '-'
+        },
+        {
+          codigo: 'miercoles', value: '-'
+        },
+        {
+          codigo: 'jueves', value: '-'
+        },
+        {
+          codigo: 'viernes', value: '-'
+        },
+      ],
+      [
+        {
+          value: '10:45 - 11:30',
+          codigo_inicio: 1045,
+          codigo_fin: 1130,
+          horario: true,
+        },
+        {
+          codigo: 'lunes', value: '-'
+        },
+        {
+          codigo: 'martes', value: '-'
+        },
+        {
+          codigo: 'miercoles', value: '-'
+        },
+        {
+          codigo: 'jueves', value: '-'
+        },
+        {
+          codigo: 'viernes', value: '-'
+        },
+      ],
+      [
+        {
+          value: '11:30 - 12:15',
+          codigo_inicio: 1130,
+          codigo_fin: 1215,
+          horario: true,
+        },
+        {
+          codigo: 'lunes', value: '-'
+        },
+        {
+          codigo: 'martes', value: '-'
+        },
+        {
+          codigo: 'miercoles', value: '-'
+        },
+        {
+          codigo: 'jueves', value: '-'
+        },
+        {
+          codigo: 'viernes', value: '-'
+        },
+      ],
+      [
+        {
+          value: '12:15 - 13:00',
+          codigo_inicio: 1215,
+          codigo_fin: 1300,
+          horario: true,
+        },
+        {
+          codigo: 'lunes', value: '-'
+        },
+        {
+          codigo: 'martes', value: '-'
+        },
+        {
+          codigo: 'miercoles', value: '-'
+        },
+        {
+          codigo: 'jueves', value: '-'
+        },
+        {
+          codigo: 'viernes', value: '-'
+        },
+      ],
+      [
+        {
+          value: '13:00 - 13:45',
+          codigo_inicio: 1300,
+          codigo_fin: 1345,
+          horario: true,
+        },
+        {
+          codigo: 'lunes', value: '-'
+        },
+        {
+          codigo: 'martes', value: '-'
+        },
+        {
+          codigo: 'miercoles', value: '-'
+        },
+        {
+          codigo: 'jueves', value: '-'
+        },
+        {
+          codigo: 'viernes', value: '-'
+        },
+      ],
+      [
+        {
+          value: '13:45 - 14:30',
+          codigo_inicio: 1345,
+          codigo_fin: 1430,
+          horario: true,
+        },
+        {
+          codigo: 'lunes', value: '-'
+        },
+        {
+          codigo: 'martes', value: '-'
+        },
+        {
+          codigo: 'miercoles', value: '-'
+        },
+        {
+          codigo: 'jueves', value: '-'
+        },
+        {
+          codigo: 'viernes', value: '-'
+        },
+      ],
+    ]
 
     return {
       materias,

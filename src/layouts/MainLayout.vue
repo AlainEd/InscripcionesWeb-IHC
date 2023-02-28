@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="text-black" style="background-color: white;">
         <q-btn
           flat
           dense
@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Inscripci&oacute;n UAGRM
+          Sistema de inscripciones web
         </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
@@ -52,7 +52,7 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksList = [
   {
     title: 'Mi perfil',
-    caption: 'quasar.dev',
+    caption: 'Consultas',
     icon: 'person',
     link: 'https://quasar.dev'
   },
@@ -74,7 +74,7 @@ const linksList = [
     icon: 'record_voice_over',
     link: 'https://forum.quasar.dev'
   },
-  
+
 ]
 
 export default defineComponent({
